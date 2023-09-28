@@ -1,23 +1,19 @@
-# Microsoft 30-Day Challenge - Day 2
+# Microsoft 30-Day Challenge - Day 3
 
 ## Introduction
 
-Welcome to my Microsoft 30-day challenge progress report! I've embarked on this challenge after hearing about it in a WhatsApp group, and I'm excited to track my progress throughout the journey.
+Welcome to my Microsoft 30-day challenge progress report! I'm on this journey to challenge myself and track my progress.
 
-## Day 2 Progress
+## Day 3 Progress
 
-Day 2 has been another productive day, building upon the momentum from Day 1. Here's what I accomplished:
+Day 3 was a bit different due to a major event:
 
-1. **Task 1:** I dedicated time to solving coding problems on LeetCode. I successfully solved two problems easy difficulty. This practice is helping me refine my problem-solving skills and coding proficiency.
+1. **Task 1:** I presented my Smart India Hackathon (SIH) project during the internal round. The whole day was dedicated to this presentation, which was a crucial part of the competition. It was a long day, with hours of waiting for a presentation that lasted only 5 minutes.
 
-2. **Task 2:** I spent a significant portion of my day, approximately 10-12 hours, working on frontend development using React and Tailwind CSS for my Smart India Hackathon (SIH) project that is a freaking online portal for different users different dashboards almost a mini ERP, Thesis Mate. This project is nearing its presentation date, and I want to ensure it's in the best possible shape.
-
-3. **Task 3:** As part of my ongoing learning, I explored ReactJS chart libraries. This will be valuable for enhancing data visualization in my project and future web development endeavors.
+2. **Task 2:** After returning home, tired from the day's events, I managed to complete 2 LeetCode coding questions. It was a small but valuable effort to continue honing my problem-solving skills.
 
 ## Reflection
 
-Day 2 has been filled with coding, problem-solving, and project development. The combination of LeetCode practice and frontend work on Thesis Mate is allowing me to grow as a developer. I'm hopeful that the effort I'm putting in now will lead to a better future.
+Day 3 was focused on the SIH internal round presentation, which demanded my attention and energy. Despite the long wait, our team remained commited till the end. I also found a moment to keep up with my LeetCode practice, even though it was a brief session.
 
-Additionally, staying engaged with these tasks helps me combat loneliness during the night. Keeping myself occupied with meaningful work is proving to be an effective strategy.
-
-I'm eager to see how my progress unfolds in the coming days and how these small contributions add up to significant improvements over the course of this challenge.
+As the challenge progresses, I anticipate a balance between project work, learning, and coding practice. I look forward to the upcoming days and the opportunities they bring to overcome this mountain of procrastination and failure.
