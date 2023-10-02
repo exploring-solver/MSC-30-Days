@@ -1,0 +1,36 @@
+find-the-index-of-the-first-occurrence-in-a-string
+class Solution {
+public:
+    int strStr(string haystack, string needle) {
+        if(needle.size()>haystack.size()) 
+            return -1;
+        for(int i=0;i<=haystack.size()-needle.size();i++){
+            string s = haystack.substr(i,needle.size());
+            if(s==needle){
+                return i;
+            } 
+        }
+        return -1;
+    }
+};
+
+search-insert-position
+class Solution {
+public:
+    int searchInsert(vector<int>& nums, int target) {
+        int low = 0, high = nums.size() - 1;
+        
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
+            
+            if (nums[mid] == target) {
+                return mid;
+            } else if (nums[mid] < target) {
+                low = mid + 1;
+            } else {
+                high = mid - 1;
+            }
+        }
+        return low;
+    }
+};
