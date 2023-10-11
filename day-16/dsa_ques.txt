@@ -1,0 +1,37 @@
+contains-duplicate
+class Solution {
+public:
+    bool containsDuplicate(vector<int>& nums) {
+        sort(nums.begin(), nums.end());
+        int n = nums.size();
+        for (int i = 1; i < n; i++) {
+            if (nums[i] == nums[i - 1])
+                return true;
+        }
+        return false;
+    }
+};
+
+/happy-number
+class Solution {
+private:
+    int nextNumber(int n){
+        int newNumber = 0;
+        while(n!=0){
+            int num = n%10;
+            newNumber += num*num;
+            n = n/10;
+        }
+        return newNumber;
+    }
+public:
+    bool isHappy(int n) {
+        int slowPointer = n;
+        int fastPointer = nextNumber(n);
+        while(fastPointer != 1 && fastPointer != slowPointer){
+            slowPointer = nextNumber(slowPointer);
+            fastPointer = nextNumber(nextNumber(fastPointer));
+        }
+        return fastPointer==1;
+    }
+};
