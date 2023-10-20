@@ -1,0 +1,72 @@
+merge-k-sorted
+class Solution {
+public:
+    ListNode* mergeKLists(vector<ListNode*>& lists) {
+        if (lists.empty()) {
+            return nullptr;
+        }
+        return mergeKListsHelper(lists, 0, lists.size() - 1);
+    }
+
+    ListNode* mergeKListsHelper(vector<ListNode*>& lists, int start, int end) {
+        if (start == end) {
+            return lists[start];
+        }
+        if (start + 1 == end) {
+            return merge(lists[start], lists[end]);
+        }
+        int mid = start + (end - start) / 2;
+        ListNode* left = mergeKListsHelper(lists, start, mid);
+        ListNode* right = mergeKListsHelper(lists, mid + 1, end);
+        return merge(left, right);
+    }
+    
+    ListNode* merge(ListNode* l1, ListNode* l2) {
+        ListNode* dummy = new ListNode(0);
+        ListNode* curr = dummy;
+        
+        while (l1 && l2) {
+            if (l1->val < l2->val) {
+                curr->next = l1;
+                l1 = l1->next;
+            } else {
+                curr->next = l2;
+                l2 = l2->next;
+            }
+            curr = curr->next;
+        }
+        curr->next = l1 ? l1 : l2;
+        
+        return dummy->next;
+    }
+};
+
+/threeSumClosest
+class Solution {
+public:
+    int threeSumClosest(vector<int>& nums, int target) {
+      int n=nums.size(),sum=0,ans=0;
+      int diff=INT_MAX;
+      sort(nums.begin(),nums.end());
+      if(n==3)
+          return nums[0]+nums[1]+nums[2];
+      for(int i=0;i<n;i++){
+        int first=nums[i];
+        int s=i+1,e=n-1;
+        while(s<e)
+        {
+          sum=first+nums[s]+nums[e];
+          if(sum==target) return target;
+          else if(abs(target-sum)<diff){
+            diff=abs(target-sum);
+            ans=sum;
+          }
+          if(sum>target)
+            e--;
+          else
+            s++;
+        }
+      }
+          return ans;
+      }
+};
